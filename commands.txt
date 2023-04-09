@@ -1,0 +1,91 @@
+minikube ip
+  189  clear
+  190  kubectl cluster-info
+  191  minikube start
+  192  minikube ip
+  193  kubectl cluster-info
+  194  kubectl apply -f client-pod.yaml
+  195  kubectl apply -f client-node-port.yaml
+  196  kubectl get pods
+  197  kubectl get services
+  198  minikube stop
+  199  minikube start
+  200  kubectl get pods
+  201  minikube ip
+  202  kubectl describe pod client-pod 
+  203  kubectl delete -f client-pod.yaml
+  204  kubectl get pods
+  205  kubectl apply -f client-deployment.yaml
+  206  kubectl get pods
+  207  kubectl get deployments
+  208  kubectl apply -f client-deployment.yaml
+  209  kubectl get deployments
+  210  kubectl get pods -o wide
+  211  kubectl apply -f client-deployment.yaml
+  212  kubectl get pods 
+  213  kubectl get pods --watch
+  214  kubectl apply -f client-deployment.yaml
+  215  kubectl get pods --watch
+  216  kubectl get pods
+  217  minikube ip
+  218  minikube stop
+  219  kubectl cluster-info
+  220  kubectl get pods
+  221  kubectl apply -f client-deployment.yaml
+  222  kubectl apply -f client-node-port.yaml
+  223  kubectl get pods
+  224  kubectl apply -f client-deployment.yaml
+  225  kubectl get pods
+  226  kubectl apply -f client-deployment.yaml
+  227  kubectl set image deployment/client-deployment client=stephengrider/multi-client:v5
+  228  kubectl get pods
+  229  docker ps
+  230  docker system prune -a
+  231  kubectl get pods
+  232  cd ..
+  233  ls
+  234  cd docker/\
+  235  cd docker/
+  236  cd complex/
+  237  docker-compose up --build
+  238  cd ..
+  239  cd complex/
+  240  docker-compose up --build
+  241  code .
+  242  cd k8s/
+  243  kubectl get deployments
+  244  kubectl delete deployment client-deployment
+  245  kubectl get deployments
+  246  kubectl get services
+  247  kubectl delete service client-node-port
+  248  kubectl get services
+  249  cd ..
+  250  kubectl apply -f k8s
+  251  kubectl get pods
+  252  kubectl apply -f k8s
+  253  kubectl get pods
+  254  kubectl apply -f k8s
+  255  kubectl get pods
+  256  kubectl get storageclass
+  257  kubectl describe storageclass
+  258  kubectl apply -f k8s
+  259  kubectl get pods
+  260  kubectl get pv
+  261  kubectl get pvc
+  262  kubectl create secret generic pgpassword --from-literal PGPASSWORD=Welcome123
+  263  kubectl get secrets
+  264  kubectl apply -f k8s
+  265  kubectl get pods
+  266  kubectl apply -f k8s
+  267  kubectl get pods
+  268  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.7.0/deploy/static/provider/cloud/deploy.yaml
+  269  kubectl apply -f k8s
+  270  kubectl get pods
+    285  kubectl delete -f k8s/
+  286  minikube delete
+  287  docker ps
+  288  docker system prune
+  289  docker ps
+  290  docker stop bdafc241b6bd
+  291  docker stop ac4f561ad008
+
